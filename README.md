@@ -1,6 +1,6 @@
 # NAG Library for Python Training material
 
-This repository contains tutorials and exercises that are used to support NAG's training courses for the NAG Library for Python.
+This repository contains tutorials and exercises that are used to support NAG's training courses for the [NAG Library for Python](https://www.nag.co.uk/nag-library-python).
 
 ## Exercises
 
@@ -20,3 +20,4 @@ The NAG Library for Python also ships with a set of usage examples.  To see them
 
 ```
 python -m naginterfaces.library.examples --locate
+```
