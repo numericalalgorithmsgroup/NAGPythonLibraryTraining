@@ -1,7 +1,6 @@
 from naginterfaces._primitive.lapacklin import dgesv as dgesv_primitive
 from naginterfaces.base import utils
 import numpy as np
-import pandas as pd
 import timeit
 import ctypes
 
@@ -15,7 +14,7 @@ def call_dgesv_primitive(A,b,N,ipiv,info):
     dgesv_primitive(N_c, one_c ,A_c ,N_c ,ipiv_c, b_c, N_c,info)
 
     r = np.ctypeslib.as_array(b_c,(N,1))
-    return(r)
+    return r
 
 def compare_solvers(N,number=5,res_form='raw',verbose=False,fortran_order=False):
     if verbose:
@@ -42,7 +41,7 @@ def compare_solvers(N,number=5,res_form='raw',verbose=False,fortran_order=False)
     "x = np.zeros(({0},1));".format(N)
     ])
 
-    if(fortran_order):
+    if fortran_order:
         timeit_setup = timeit_setup + "A = np.asfortranarray(A);"
 
     scipy_computation = 'x = sp.linalg.solve(A,b);'
@@ -92,4 +91,4 @@ def compare_solvers(N,number=5,res_form='raw',verbose=False,fortran_order=False)
     if res_form=='scaled':
         result[1:] = result[1:] / (scipy/number)
 
-    return(result)
+    return result
