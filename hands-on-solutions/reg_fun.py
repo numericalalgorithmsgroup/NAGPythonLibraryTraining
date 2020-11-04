@@ -24,16 +24,16 @@ def gen_multivar_x(m, n, statecomm, dist_id="MN", sigma=2.0, rho=0.5):
 
     # NAG arguments for multivar_XXX functions
     mode = 2
-    r = np.zeros(m*(m+1) + 2)
+    comm = {}
 
     # call random sampling
     if dist_id == "MN":
         sorder = 1
-        r, x = rand.multivar_normal(sorder, mode, n, xmu, c, r, statecomm)
+        x = rand.multivar_normal(sorder, mode, n, xmu, c, comm, statecomm)
     if dist_id == "T3":
         df = 3
         c_t = (float(df) - 2) / float(df) * c
-        r, x = rand.multivar_students_t(mode, n, df, xmu, c_t, r, statecomm)
+        x = rand.multivar_students_t(mode, n, df, xmu, c_t, comm, statecomm)
 
     return x
 
