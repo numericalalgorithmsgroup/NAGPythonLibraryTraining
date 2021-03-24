@@ -1,3 +1,5 @@
+![NAG logo](NAG_logo.png)
+
 # NAG Library for Python Training material
 
 This repository contains tutorials and exercises that are used to support NAG's training courses for the [NAG Library for Python](https://www.nag.com/nag-library-python).
