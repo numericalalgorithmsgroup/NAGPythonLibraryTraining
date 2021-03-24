@@ -3,8 +3,7 @@
 ```
 python3 -m venv ni3dev
 . ni3dev/bin/activate
-ni3dev/bin/pip install numpy matplotlib jupyter
-pip install http://carlton.nag.co.uk/jenkins/view/ni/job/ni_linux_re_dist_development/lastSuccessfulBuild/artifact/non-licence-managed/naginterfaces_nag/naginterfaces-27.0.0.0.dev176916-py2.py3-none-linux_x86_64.whl
+python -m pip install --extra-index-url https://www.nag.com/downloads/py/naginterfaces_mkl naginterfaces
 ```
 
 ## Activate environment:
