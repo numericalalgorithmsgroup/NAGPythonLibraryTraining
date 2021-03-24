@@ -1,7 +1,11 @@
+![NAG logo](../NAG_logo.png) 
+
+# NAG Library for Python courseware material
+
 # Example Jupyter Notebooks
 
 This folder contains the Jupyter notebooks referenced
-in the NAG Library for Python Course.
+in the **NAG Library for Python Course**.
 
 # Content
 
