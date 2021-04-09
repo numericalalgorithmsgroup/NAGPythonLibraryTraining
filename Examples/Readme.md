@@ -12,7 +12,8 @@ in the **NAG Library for Python Course**.
 Examples are available in Python and Jupyter notebooks
  
 ### Notebooks
- 
+
+  * `contiguity` [Small example of array slicing and memory contiguity](python/memory_contiguity.ipynb)
   * `correg` [Quantile Linear Regression](correg/quantile_linreg_easy.ipynb) [[using Pandas to load CSV data](correg/quantile_linreg_pandas.ipynb) | [python](python/quantile_linreg_ex.py) | [plot](python/quantile_linreg_ex.pdf)]
   * `correc/lmm` [Multi-level Linear Mixed Effects regression](correg/lmm_notebook.ipynb)
   * `exception` [Simple example illustrating how to catch an exception while solving a trivial system of linear equations](simple/SimpleException.ipynb)
